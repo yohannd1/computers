@@ -6,4 +6,4 @@ not strictly CPUs.
 ## the journey
 
 1. [CUCA0](cuca0/): simple CPU based off the initial designs given in a
-   computer architecture class I attended.
+   computer architecture class I attended. IN PROGRESS
