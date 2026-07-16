@@ -119,6 +119,14 @@ Format: `opcode_hex: name (arg0: type0, arg1: type1, ...)`
 - `.var name value` creates a single byte slot for a variable, with the
     address label `name` and the value `value`;
 
-### extras
+## implementation details
+
+- instructions divided into microinstructions and microprograms;
+
+- single bus, controlled through tri-state buffers;
+
+- no pipelining;
+
+## extras
 
 I tried doing this once before, see [cuca-sv](https://github.com/yohannd1/cuca-sv).
