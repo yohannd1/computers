@@ -19,6 +19,8 @@ Registers (all word-sized):
   - Program counter (`pc`): points to the next instruction in memory to
     be read;
 
+The ROM is the entire memory state, at the moment.
+
 ### instruction set & encoding
 
 The instruction opcode size is the same as the word size: 8 bits. As
@@ -109,3 +111,14 @@ Format: `opcode_hex: name (arg0: type0, arg1: type1, ...)`
 - 0c: halt
 
   Stops the CPU.
+
+### assembly directives
+
+- `name:` defines a label at that point;
+
+- `.var name value` creates a single byte slot for a variable, with the
+    address label `name` and the value `value`;
+
+### extras
+
+I tried doing this once before, see [cuca-sv](https://github.com/yohannd1/cuca-sv).
